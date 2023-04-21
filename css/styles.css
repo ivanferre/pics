@@ -47,9 +47,9 @@ p {
 
 .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: darkred;
-    color: whitesmoke;
+    /* width: 120px; */
+    background-color: whitesmoke;
+    color: darkred;
     text-align: left;
     border-radius: 6px;
     padding: 5px 2px;
@@ -57,8 +57,8 @@ p {
     /* Position the tooltip*/
     position: relative;
     z-index: 1;
-    top: -10px;
-    left: 2rem;
+    bottom: 3rem;
+    right: 1rem;
 }
 
 figcaption:hover .tooltiptext {
