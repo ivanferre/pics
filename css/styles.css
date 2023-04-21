@@ -47,18 +47,20 @@ p {
 
 .tooltiptext {
     visibility: hidden;
-    /* width: 120px; */
-    background-color: whitesmoke;
-    color: darkred;
+    width: 200px;
+    color: whitesmoke;
+    background-color: darkred;
     text-align: left;
     border-radius: 6px;
     padding: 5px 2px;
 
     /* Position the tooltip */
-  width: 120px;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */}
+    width: 3rem;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -1.5rem;
+    /* Use half of the width, to center the tooltip */
+}
 
 figcaption:hover .tooltiptext {
     visibility: visible;
@@ -76,12 +78,19 @@ figcaption {
     border: 1px solid red;
 }
 
+/* https: //css-tricks.com/almanac/properties/o/overflow-wrap/ */
+span {
+    overflow-wrap: break-word;
+}
+
 .familyname {
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.name:after, .city:after, .familyname:after {
-    content:  '\a';
+.name:after,
+.city:after,
+.familyname:after {
+    content: '\a';
     white-space: pre;
 }
