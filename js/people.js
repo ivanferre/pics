@@ -1,8 +1,11 @@
 // people.js
 
 // class Person definition
+
+let numPeople = 0;
 class Person {
-  constructor(
+
+constructor(
     name,
     familyname,
     city,
@@ -10,7 +13,8 @@ class Person {
     hobbies,
     picture,
     bigPicture
-  ) {
+) {
+  this.id = numPeople++;
     this.name = name;
     this.familyname = familyname;
     this.city = city;
@@ -18,7 +22,7 @@ class Person {
     this.hobbies = hobbies;
     this.picture = picture;
     this.bigPicture = bigPicture;
-  }
+}
 }
 
 // create individuals
@@ -61,26 +65,6 @@ let merve = new Person(
   "Fashion",
   "img/05-PowerCoders_05.jpg",
   "img/05-PowerCoders_05.jpg"
-);
-
-let merve = new Person(
-  "Merve",
-  "Cildag",
-  "Zürich",
-  "Data Analyst",
-  "Fashion",
-  "img/07-PowerCoders_07.jpg",
-  "img/07-PowerCoders_07.jpg"
-);
-
-let merve = new Person(
-  "Merve",
-  "Cildag",
-  "Zürich",
-  "Data Analyst",
-  "Fashion",
-  "img/08-PowerCoders_08.jpg",
-  "img/08-PowerCoders_08.jpg"
 );
 
 
