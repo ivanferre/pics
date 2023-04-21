@@ -22,6 +22,7 @@ class Person {
 }
 
 // create individuals
+// ! DEBUG Data NOT RELIABLE
 let sumeyra = new Person(
   "Sümeyra",
   "Sevin",
@@ -56,10 +57,30 @@ let merve = new Person(
   "Merve",
   "Cildag",
   "Zürich",
-  "",
+  "Data Analyst",
   "Fashion",
   "img/05-PowerCoders_05.jpg",
   "img/05-PowerCoders_05.jpg"
+);
+
+let merve = new Person(
+  "Merve",
+  "Cildag",
+  "Zürich",
+  "Data Analyst",
+  "Fashion",
+  "img/07-PowerCoders_07.jpg",
+  "img/07-PowerCoders_07.jpg"
+);
+
+let merve = new Person(
+  "Merve",
+  "Cildag",
+  "Zürich",
+  "Data Analyst",
+  "Fashion",
+  "img/08-PowerCoders_08.jpg",
+  "img/08-PowerCoders_08.jpg"
 );
 
 
