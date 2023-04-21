@@ -9,13 +9,13 @@ html {
     box-sizing: inherit;
 }
 
-header {
-    background-color: red;
-    color: white;
+header img {
+    width: 100%;
 }
 
 h1 {
     text-align: center;
+    size: 3rem;
 }
 
 h1,
