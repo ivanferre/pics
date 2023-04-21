@@ -22,45 +22,63 @@ class Person {
 }
 
 // create individuals
-let almila = new Person(
-  "Almila",
-  "Ada",
-  "Actress",
+let sumeyra = new Person(
+  "Sümeyra",
+  "Sevin",
   "Bern",
-  "Model and Ballerina",
-  "img/Almila_Ada_Actress_ModelUndBallerina_125x188.jpg",
-  "img/Almila_Ada_Actress_ModelUndBallerina_125x188.jpg"
+  "Cybersecurity Analyst",
+  "Cosmos and nature",
+  "img/00-PowerCoders_62.jpg",
+  "img/00-PowerCoders_62.jpg"
 );
 
-let can = new Person(
-  "Can",
-  "Yamar",
-  "Actor",
+let susanne = new Person(
+  "Susanne",
+  "König",
   "Lausanne",
-  "Nothing else",
-  "img/Can_Yaman_Actor_NothingElse_125x167.jpg",
-  "img/Can_Yaman_Actor_NothingElse_125x167.jpg"
+  "Training & Talent Development",
+  "Web Development",
+  "img/02-PowerCoders_02.jpg",
+  "img/02-PowerCoders_02.jpg"
 );
 
-let handel = new Person(
-  "Handel",
-  "Erçel",
-  "Luzern",
-  "Actress",
-  "Model",
-  "img/Handel_Erçel_Actress_Model_125x188.jpg",
-  "img/Handel_Erçel_Actress_Model_125x188.jpg"
-);
-
-let mehmet = new Person(
-  "Mehmet Akif",
-  "Alakurt",
+let anastasiia = new Person(
+  "Anastasiia",
+  "Shedluko",
   "Zürich",
-  "Model",
-  "Actor",
-  "img/MehmetAkif_125x188.jpg",
-  "img/MehmetAkif_125x188.jpg"
+  "Talented Programmer",
+  "Fashion",
+  "img/03-PowerCoders_03.jpg",
+  "img/03-PowerCoders_03.jpg"
 );
 
+let merve = new Person(
+  "Merve",
+  "Cildag",
+  "Zürich",
+  "Talented Programmer",
+  "Fashion",
+  "img/05-PowerCoders_05.jpg",
+  "img/05-PowerCoders_05.jpg"
+);
 // create list and include the individuals
-let people = [almila, can, handel, mehmet];
+let people = [sumeyra, susanne, anastasiia, merve];
+
+/*
+ * Reads the people array and loads it into the table
+ * returns TRUE if all ok, FALSE otherwise.
+ */
+
+function displayPerson() {
+  // display picture as a figure
+  // compose figcaption
+  //    name + familyName bold
+  //    profession, city
+  //    `Likes ${hobbies}`
+  return true;
+}
+
+function displayAllPeople() {
+  people.forEach(displayPerson(), p, i);
+  return true;
+}
