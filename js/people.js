@@ -56,11 +56,13 @@ let merve = new Person(
   "Merve",
   "Cildag",
   "Zürich",
-  "Talented Programmer",
+  "",
   "Fashion",
   "img/05-PowerCoders_05.jpg",
   "img/05-PowerCoders_05.jpg"
 );
+
+
 // create list and include the individuals
 let people = [sumeyra, susanne, anastasiia, merve];
 

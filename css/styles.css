@@ -54,18 +54,34 @@ p {
     border-radius: 6px;
     padding: 5px 2px;
 
-    /* Position the tooltip*/
-    position: relative;
-    z-index: 1;
-    bottom: 3rem;
-    right: 1rem;
-}
+    /* Position the tooltip */
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */}
 
 figcaption:hover .tooltiptext {
     visibility: visible;
 }
 
+/* DEBUG */
+figcaption {
+    border: 1px solid blue;
+}
+
 .box {
-    padding: 1.5rem;
-    margin: 1rem 0;
+    padding: 0.5rem;
+    margin: 12px;
+    /* DEBUG */
+    border: 1px solid red;
+}
+
+.familyname {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.name:after, .city:after, .familyname:after {
+    content:  '\a';
+    white-space: pre;
 }
