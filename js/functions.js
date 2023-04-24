@@ -14,12 +14,12 @@ function filterPeopleByCity() {
   let citizens = []; // list of <figure>
 
   cities = document.getElementsByClassName("city");
-  cities.forEach(findCitizens()){
+  // cities.forEach(findCitizens()){
 // citizens <-- figures with people from that city
     
   }
   
-}
+
 
 function displayPersonDetails() {
   // person = who's the person (object)?
