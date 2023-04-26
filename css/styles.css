@@ -1,6 +1,17 @@
 /* TODO
  * Apply the changes suggested by Susanne.
+    # figure: relative positioning
+    - <img> data-tooltip = "hobbies"
+    - img::after { content: data-tooltip }
+    - tooltip: absolute, on the bottom of the picture.
+
+    # figcaption: absolute,
+    - at the bottom of the figure.
  */
+
+/* https: //blog.logrocket.com/creating-beautiful-tooltips-with-only-css/ */
+/* https: //www.techonthenet.com/css/selectors/before.php */
+/* https: //codepen.io/bluefantail/pen/PzKvrg */
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -70,10 +81,14 @@ figcaption:hover .tooltiptext {
     visibility: visible;
 }
 
+figure {
+    position: relative;
+}
+
 /* DEBUG */
 figcaption {
     border: 1px solid blue;
-    position: relative;
+    position: absolute;
 }
 
 .box {
