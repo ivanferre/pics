@@ -1,8 +1,11 @@
 // people.js
 
 // class Person definition
+
+let numPeople = 0;
 class Person {
-  constructor(
+
+constructor(
     name,
     familyname,
     city,
@@ -10,7 +13,8 @@ class Person {
     hobbies,
     picture,
     bigPicture
-  ) {
+) {
+  this.id = numPeople++;
     this.name = name;
     this.familyname = familyname;
     this.city = city;
@@ -18,10 +22,11 @@ class Person {
     this.hobbies = hobbies;
     this.picture = picture;
     this.bigPicture = bigPicture;
-  }
+}
 }
 
 // create individuals
+// ! DEBUG Data NOT RELIABLE
 let sumeyra = new Person(
   "Sümeyra",
   "Sevin",
@@ -56,7 +61,7 @@ let merve = new Person(
   "Merve",
   "Cildag",
   "Zürich",
-  "",
+  "Data Analyst",
   "Fashion",
   "img/05-PowerCoders_05.jpg",
   "img/05-PowerCoders_05.jpg"
